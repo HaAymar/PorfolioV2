@@ -1,0 +1,73 @@
+═══════════════════════════════════════════════════════════
+  🚀 DÉMARRAGE RAPIDE - Portfolio DevOps
+═══════════════════════════════════════════════════════════
+
+📋 PRÉREQUIS:
+  ✓ Node.js (v18+): https://nodejs.org/
+  ✓ Python (3.8+): https://python.org/
+  ✓ MongoDB: https://www.mongodb.com/
+
+═══════════════════════════════════════════════════════════
+
+🔧 INSTALLATION (à faire une seule fois):
+
+1️⃣  Décompresser le fichier
+    cd portfolio-devops
+
+2️⃣  Backend - Installation
+    cd backend
+    pip install -r requirements.txt
+    
+    # Créer .env avec:
+    MONGO_URL=mongodb://localhost:27017/
+    DB_NAME=portfolio_db
+
+3️⃣  Frontend - Installation
+    cd frontend
+    npm install -g yarn
+    yarn install
+    
+    # Créer .env avec:
+    REACT_APP_BACKEND_URL=http://localhost:8001
+
+═══════════════════════════════════════════════════════════
+
+▶️  LANCER LE PROJET:
+
+Terminal 1 - Backend:
+    cd backend
+    python server.py
+
+Terminal 2 - Frontend:
+    cd frontend
+    yarn start
+
+🌐 Ouvrir: http://localhost:3000
+
+═══════════════════════════════════════════════════════════
+
+💡 MONGODB ATLAS (Cloud gratuit - Recommandé):
+
+1. Créer compte: https://www.mongodb.com/cloud/atlas
+2. Créer cluster gratuit (M0)
+3. Database Access → Add User (noter password)
+4. Network Access → Add IP → 0.0.0.0/0
+5. Copier connection string dans backend/.env:
+   MONGO_URL=mongodb+srv://user:pass@cluster.mongodb.net/
+
+═══════════════════════════════════════════════════════════
+
+✅ VÉRIFICATION:
+
+Backend OK si vous voyez:
+  "INFO: Uvicorn running on http://0.0.0.0:8001"
+
+Frontend OK si vous voyez:
+  "webpack compiled successfully"
+
+═══════════════════════════════════════════════════════════
+
+📧 Support: aymar.hakizimana@gmail.com
+🔗 GitHub: https://github.com/HaAymar
+
+═══════════════════════════════════════════════════════════
